@@ -14,6 +14,7 @@ body{
     font-size: 12px;
     color: #3a3a34; 
     line-height: 1.6;   
+    font-family: czech;
 }
 
 section {
@@ -49,7 +50,7 @@ section {
 
 #buttons {
     display: inline-flex;
-    margin-top: 30px;
+    margin-top: 5px;
     /* flex-flow: row;
     align-content: center; */
 }
