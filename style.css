@@ -116,6 +116,7 @@ section {
     }
     #blablabla {
         margin-top: 20px;
+        display: none;
         margin-bottom: 10px;
     }
     #blablabla p {
