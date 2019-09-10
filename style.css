@@ -1,4 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap'); */
+
+@font-face {
+    font-family: 'czech';
+    src: url('resources/Colus-Regular.ttf');
+}
 
 *{
     margin: 0;
@@ -35,7 +39,7 @@ section {
 
 #showcase-content-text h1 {
     font-weight: bolder;
-    font-family: fantasy;
+    font-family: czech;
     line-height: 1;
 }
 
@@ -68,12 +72,8 @@ section {
     font-size: 13px;
     font-family: "Segoe UI";
 }
-/*
-@font-face {
-    font-family: 'czech';
-    src: url('file://C:/Users/Andrei/Desktop/ant/ofont.ru_Old_Classic.ttf');
-}
 
+/*
 @font-face {
     font-family: 'czech1';
     src: url('file://C:/Users/Andrei/Desktop/ant/ofont.ru_MyslNarrowC.ttf');
@@ -146,4 +146,26 @@ section {
     #blablabla {
         display: none;
     }
+}
+
+.main-text {
+    margin: 10px;
+}
+.main-text h1 {
+    font-family: czech;
+    font-size: 30px;
+}
+
+.main-text ul {
+    list-style-type: none;
+}
+
+.main-text li {
+    font-size: 12px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.main-text p {
+    font-size: 12px;
 }
