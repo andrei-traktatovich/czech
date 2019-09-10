@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'czech';
-    src: url('resources/Colus-Regular.ttf');
+    src: url('resources/17589.otf');
 }
 
 *{
@@ -115,7 +115,7 @@ section {
     #showcase-content-text-container a {
     }
     #blablabla {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
     #blablabla p {
