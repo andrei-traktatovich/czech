@@ -151,8 +151,21 @@ section {
 }
 
 .main-text {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+.tiles-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
+.tile {
+    
+    margin: 20px;
+}
+
 .main-text h1 {
     font-family: czech;
     font-size: 30px;
@@ -160,12 +173,14 @@ section {
 
 .main-text ul {
     list-style-type: none;
+    list-style-position: inside;
 }
 
 .main-text li {
     font-size: 12px;
     margin-top: 10px;
     font-size: 12px;
+    list-style-position: inside;
 }
 
 .main-text p {

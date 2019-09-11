@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .form-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .form-row input {
+            flex: 4;
+        }
+        .form-row label {
+            flex: 1;
+        }
+
+        .column-layout  {
+            display: flex;
+        }
+        .main-column {
+            flex: 2;
+        }
+        .sidebar-1 {
+            flex: 1;
+        }
+        .sidebar-2 {
+            flex: 1;
+        }
+    </style>
+    <form class="container-1">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-row">
+                <label for="occupation">Occupation:</label>
+                <input type="text" name="occupation" id="occupation">
+        </div>
+    </div>
+    </form>
+
+    <div class="column-layout">
+        <div class="main-column">
+            <h1>Div 1</h1>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloremque adipisci aspernatur optio libero provident illo. Dolor harum, perferendis at molestias reprehenderit est aliquid id placeat cum! Quo, id. Ratione fugit saepe eos libero tempore officia, aliquid ipsa repellendus sapiente cumque nam, assumenda veritatis amet ipsam omnis est! Nemo earum corrupti temporibus quis, architecto est similique ducimus dolor sint dolorum cum eius qui iste ad omnis ex eum vel labore odio perspiciatis. Impedit, voluptate vel! Minima reprehenderit ab praesentium veniam. Quidem aut excepturi quisquam ipsa impedit, eaque optio! Commodi ex nobis minus iste repellat doloribus deleniti sed dicta expedita nemo.</div>
+        </div>
+        <div class="sidebar-1">
+                <h1>Div 2</h1>
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, temporibus?</div>
+            </div>
+            <div class="sidebar-2">
+                    <h1>Div 3</h1>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, temporibus?</div>
+                </div>
+    </div>
+</body>
+</html>
