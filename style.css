@@ -17,7 +17,7 @@ body{
     font-family: 'Benguiat Rus', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-section {
+.page {
     height: 100vh;
 }
 
@@ -114,6 +114,7 @@ section {
 
     #showcase-content-text-container a {
     }
+
     #blablabla {
         margin-top: 20px;
         display: none;
@@ -122,6 +123,27 @@ section {
     #blablabla p {
         margin-bottom: 5px;
         font-size: 13px;
+    }
+    #about-us {
+        flex-basis: 50%; 
+        margin: auto;
+        font-size: 15px;
+    }
+    .tiles-layout {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;    
+    }
+
+    .individuals-main-text {
+            flex-basis: 50%; 
+            margin: auto;
+            font-size: 15px;
+    }
+    
+    .main-text {
+        margin: 20px;
     }
 }
 @media (max-width: 600px) {
@@ -148,37 +170,51 @@ section {
     #blablabla {
         display: none;
     }
+
+    #about-us {
+        flex-basis: 80%; 
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .individuals-main-text {
+        flex-basis: 80%; 
+        margin: auto;
+        font-size: 12px;
+    }
+    
+    .tile {
+        border-bottom: 1px solid rgb(214, 210, 210);
+        padding-bottom: 20px;
+    }
+    
+    .tile:nth-last() {
+        border-bottom: 0px;
+    }
 }
 
-.main-text {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.tiles-layout {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    
-}
 .tile {
-    
-    margin: 20px;
+    flex-basis: 25%;
+    margin: 10px;
 }
 
-.main-text h1 {
+
+h1 {
     font-family: czech;
     font-size: 30px;
 }
-
-.main-text ul {
+h2 {
+    font-size: 15px;
+}
+ul {
     list-style-type: none;
-    list-style-position: inside;
+    list-style-position: outside;
 }
 
-.main-text li {
+li {
     font-size: 12px;
     margin-top: 10px;
+    padding-left: 10px;
     font-size: 12px;
     list-style-position: inside;
 }
