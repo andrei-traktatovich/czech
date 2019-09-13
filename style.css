@@ -18,13 +18,55 @@ body{
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* showcase */
 
 /* common */
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6ch;
+    background-color: rgb(65, 63, 63);
+    color: white;
+    font-family: 'Benguiat Rus';
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+}
+header > div {
+    flex: 1;
+    padding: 3px;
+    font-size: x-large;
+    font-weight: bolder; 
+}
+header > div > a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: white;
+}
+#email {
+    text-align: left;
+}
+
+#tel {
+    text-align: right;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3ch;
+    background-color: rgb(65, 63, 63);
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
 #showcase {
     background-image: url('images/imageedit_15_7174782451.jpg'); 
     background-repeat: no-repeat;
@@ -114,7 +156,20 @@ body{
 
     #showcase-content-text-container a {
     }
-
+    
+    #spinner {
+        z-index: 1000;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;  
+        display: flex; 
+    }
+    #spinner > div {
+        margin: auto;
+    }
+    
     #blablabla {
         margin-top: 20px;
         display: none;
@@ -133,7 +188,8 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-content: space-between;    
+        align-content: space-around;
+        flex: 2;    
     }
 
     .individuals-main-text {
@@ -194,8 +250,9 @@ body{
 }
 
 .tile {
-    flex-basis: 25%;
-    margin: 10px;
+    flex: 1;
+    min-width: 20%;
+    margin: 20px;
 }
 
 
