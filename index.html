@@ -234,8 +234,14 @@
             (function() {
                 
                 var callback = function(){
-                    document.getElementById("spinner").style.display =  "none";
-                    document.removeEventListener("DOMContentLoaded", callback);
+                    var image = new Image();
+                    image.src="images/photo-long.png";
+                    
+                    image.onload = function() {
+                        document.getElementById("spinner").style.display =  "none";
+                        document.removeEventListener("DOMContentLoaded", callback);
+                    }
+                    
                 };
 
                 if (
