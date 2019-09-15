@@ -10,16 +10,14 @@
         <div id="spinner">
                 <div><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i></div>
         </div>
-        <header>
-            <div id="email">
-                <i class="fa fa-envelope-o"></i>
-                <a href="mailto:blablabla@bl.com">blablabla@bl.com</a>
-            </div>
-            <div id="tel">
-                <i class="fa fa-mobile"></i>
-                <a href="tel:+73333333333">+7 333 333 33 33</a> 
-
-            </div>
+        <header id="header">
+            <i class="fa fa-envelope-o" style="color:#ea4335;"></i>
+            <a href="mailto:blablabla@bl.com">blablabla@bl.com</a>
+            &nbsp;|&nbsp;
+            <i class="fa fa-mobile" style="color: #ea4335;"></i>
+            <i class="fa fa-telegram" style="color: #0088cc;"></i>
+            <i class="fa fa-whatsapp" style="color: #128c7e;"></i>
+            <a href="tel://+73333333333">+7 333 333 33 33</a> 
         </header>
         <section id="showcase" class="page">
             <div id="showcase-content">
@@ -249,6 +247,14 @@
                     document.addEventListener("DOMContentLoaded", callback);
                 }
                 
+                window.onscroll = function() {
+                    if (window.scrollY > 10) 
+                        document.getElementById("header").classList.add("header-scrolling");
+
+                    else 
+                        document.getElementById("header").classList.remove("header-scrolling");
+                };
+
                 function scrollTo(element) {
                     window.scroll({
                             behavior: 'smooth',

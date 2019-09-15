@@ -19,42 +19,37 @@ body{
 
 .page {
     min-height: 100vh;
+    padding-top: 5vh;
 }
 
 /* showcase */
 
 /* common */
-
+a {
+    cursor: pointer;
+}
 header {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 6ch;
-    background-color: rgb(65, 63, 63);
-    color: white;
-    font-family: 'Benguiat Rus';
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: space-between;
-}
-header > div {
-    flex: 1;
-    padding: 3px;
-    font-size: x-large;
-    font-weight: bolder; 
-}
-header > div > a {
-    text-decoration: none;
-    text-transform: lowercase;
-    color: white;
-}
-#email {
-    text-align: left;
+    width: 98%;
+    height: 4vh;
+    padding: 1%;
+    
+    font-size: larger;
+    text-align: right;
+    text-align: right;
+} 
+
+.header-scrolling {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-#tel {
-    text-align: right;
+header > a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: black;
 }
 
 footer {
