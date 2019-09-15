@@ -37,7 +37,6 @@ header {
     height: 4vh;
     padding: 1%;
     
-    font-size: larger;
     text-align: right;
     text-align: right;
 } 
@@ -130,7 +129,11 @@ footer {
         background-size: cover;
         background-image: url('images/photo-long.png');
     }
-
+    
+    header {
+        
+        font-size: larger;
+    }
     #showcase-content {
         flex-flow: row;
         align-content: flex-end;
@@ -224,7 +227,10 @@ footer {
     #showcase {
         background-size: cover;
     }
-
+    header {
+        font-size: inherit;
+        text-align: center;
+    }
     #showcase-content-text-container {
         text-align: center;
         margin-top: 65vh;
