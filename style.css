@@ -27,6 +27,8 @@ body{
 /* common */
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 header {
     position: fixed;
@@ -196,7 +198,28 @@ footer {
     .main-text {
         margin: 20px;
     }
+    
+    #entities .tile {
+        background-color:  rgba(190, 195, 197, 0.2);
+        border-radius: 5px;
+    }
+
+    
+.tile h2 {
+    height: 40px;
 }
+.tile-icon {
+    margin: 10px;
+}
+
+}
+.tile-header {
+    text-align: center;
+    }
+.tile {
+    padding: 3px;
+}
+
 @media (max-width: 600px) {
     #showcase {
         background-size: cover;
