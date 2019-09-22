@@ -74,6 +74,7 @@ footer {
     display: flex; 
     flex-flow: column;
     align-content: center;
+    
 }
 
 #showcase-content-text h1 {
@@ -94,11 +95,11 @@ footer {
 }
 
 .button {
-    background-color:  rgba(62, 85, 94, .2);
+    background-color:  rgba(62, 85, 94, .5);
     cursor: pointer;
-    padding: 5px;
-    margin: 5px;
-    
+    padding: 15px;
+    margin: 10px;
+    font-size: larger;
 }
 
 .button:hover {
@@ -109,7 +110,7 @@ footer {
     text-decoration: none;
     font-weight: bold;
     color: whitesmoke;
-    font-size: 13px;
+    font-size: 17px;
     font-family: "Segoe UI";
 }
 
@@ -144,7 +145,8 @@ footer {
     }
 
     #showcase-content {
-        text-align: left;
+        text-align: center;
+        text-shadow: 0 0 3px gray, 0 0 5px rgb(126, 126, 172); 
         width: 100%;
     }
 
@@ -217,7 +219,7 @@ footer {
     }
     
     #entities .tile {
-        background-color:  rgba(190, 195, 197, 0.8);
+        background-color:  rgba(190, 195, 197, 0.5);
         border-radius: 5px;
         color: black;
         font-weight: bold;
