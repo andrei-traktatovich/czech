@@ -151,7 +151,7 @@ footer {
     }
 
     #showcase {
-        background-image: url('images/option3.jpeg');
+        
         background-size: cover;
     }
 
@@ -166,7 +166,7 @@ footer {
     }
 
     #showcase-content-text h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     #showcase-content-text-container a {
