@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'czech';
     src: url('resources/17589.otf');
@@ -11,46 +10,176 @@
 
 body{
     margin: 0;
-    font-size: 12px;
-    color: #3a3a34; 
+    font-size: 16px;
+    color: #666; 
     line-height: 1.6;   
     font-family: 'Benguiat Rus', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.page {
-    min-height: 100vh;
-    padding-top: 5vh;
+.image {
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+.full-page {
+    min-height: 100%;
 }
 
+.ptext {
+    position: absolute;
+    height: 20vh;
+    width: 60vw;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    left: 20vw;
+    top: 40vh;
+}
+
+.section-header {
+    margin: auto;
+    text-align: center;
+    color: #111;
+}
+.section-header h1 {
+    color: black;
+    margin-top: 80px;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.border {
+    color: white;
+    padding: 20px;
+    /* opacity: 0.7; */
+}
+
+.trans {
+    background-color: rgba(17,17,17,0.7);
+}
+
+.section-light {
+    background-color: lightgray;
+    color: black;
+}
+.section-dark {
+    background-color: #232425;
+    color: #ddd;
+}
+
+#page1 {
+    background-image: url("images/option1.jpeg");
+}
+
+#entities {
+    background-image: url("images/option3.jpeg");
+}
+
+#individuals {
+    background-image: url("images/option5.jpeg");
+}
+#individuals-text {
+    text-align: center;
+}
+#individuals-text .tile {
+    background-color: inherit;
+}
+.height35 {
+    min-height: 45vh;
+}
+
+#page1 h1 {
+    font-size: 40px;
+}
+
+.text {
+    width: 90vw;
+    padding: 20px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-items: flex-start; 
+    align-content: center;
+    
+}
+
+#about-us p {
+    line-height: 1.8;
+}
+#about-us-text1 {
+    flex-basis: 30%;
+    text-align: left;
+    margin: auto;
+}
+
+#about-us-text2 {
+    flex-basis: 30%;
+    text-align: right;
+    margin: auto;
+}
+#portrait {
+    width: 250px;
+    height: 250px;
+    background-image: url('images/antcut.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    /* border: 3px solid rgb(92, 91, 91); */
+
+    
+}
+
+#company-info-links {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-info-link {
+    letter-spacing: 1px;
+    text-transform: none;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    width: 15vw;
+    margin: 10px;
+}
+.company-info-link a {
+    color: whitesmoke;
+    
+}
 /* showcase */
 
 /* common */
 a {
     cursor: pointer;
     text-decoration: none;
-    color: black;
-}
-header {
-    position: fixed;
-    top: 0;
-    width: 98%;
-    height: 4vh;
-    padding: 1%;
-    
-    text-align: right;
-    text-align: right;
-} 
-
-.header-scrolling {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
-header > a {
-    text-decoration: none;
-    text-transform: lowercase;
-    color: black;
+.tiles-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    align-content: center;
+    flex: 2;    
+}
+
+
+.tile h2 {
+height: 40px;
+}
+.tile-icon {
+margin: 10px;
 }
 
 footer {
@@ -112,165 +241,11 @@ footer {
     font-family: "Segoe UI";
 }
 
-/*
-@font-face {
-    font-family: 'czech1';
-    src: url('file://C:/Users/Andrei/Desktop/ant/ofont.ru_MyslNarrowC.ttf');
-}
-
-@font-face {
-    font-family: 'czech1';
-    src: url('file://C:/Users/Andrei/Desktop/ant/ofont.ru_a_BodoniNovaNr.ttf') format("truetype");
-}
-*/
-
-@media (min-width: 601px) {
-    #showcase {
-        background-size: cover;
-        background-image: url('images/photo-long.png');
-    }
-    
-    header {
-        
-        font-size: larger;
-    }
-    #showcase-content {
-        flex-flow: row;
-        align-content: flex-end;
-        margin-left: 70ch;
-        text-align: left;
-    }
-
-    #showcase-content-text-container {
-        margin: auto;
-        padding: 10px;
-    }
-
-    #showcase-content-text h1 {
-        font-size: 60px;
-    }
-
-    #showcase-content-text h2 {
-        font-size: 20px;
-    }
-
-    #showcase-content-text-container a {
-    }
-    
-    #spinner {
-        z-index: 1000;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;  
-        display: flex; 
-    }
-    #spinner > div {
-        margin: auto;
-    }
-    
-    #blablabla {
-        margin-top: 20px;
-        display: none;
-        margin-bottom: 10px;
-    }
-    #blablabla p {
-        margin-bottom: 5px;
-        font-size: 13px;
-    }
-    #about-us {
-        flex-basis: 50%; 
-        margin: auto;
-        font-size: 15px;
-    }
-    .tiles-layout {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: space-around;
-        flex: 2;    
-    }
-
-    .individuals-main-text {
-            flex-basis: 50%; 
-            margin: auto;
-            font-size: 15px;
-    }
-    
-    .main-text {
-        margin: 20px;
-    }
-    
-    #entities .tile {
-        background-color:  rgba(190, 195, 197, 0.2);
-        border-radius: 5px;
-    }
-
-    
-.tile h2 {
-    height: 40px;
-}
-.tile-icon {
-    margin: 10px;
-}
-
-}
 .tile-header {
     text-align: center;
     }
 .tile {
     padding: 3px;
-}
-
-@media (max-width: 600px) {
-    #showcase {
-        background-size: cover;
-    }
-    header {
-        font-size: x-small;
-        text-align: center;
-    }
-    #showcase-content-text-container {
-        text-align: center;
-        margin-top: 65vh;
-        height: 35vh;
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-
-    #showcase-content-text h1 {
-        font-size: 35px;
-        margin-top: 20px;
-    }
-    
-    #showcase-content-text h2 {
-        font-size: 14px;
-    }
-
-    #blablabla {
-        display: none;
-    }
-
-    #about-us {
-        flex-basis: 80%; 
-        margin: auto;
-        font-size: 12px;
-    }
-
-    .individuals-main-text {
-        flex-basis: 80%; 
-        margin: auto;
-        font-size: 12px;
-    }
-    
-    .tile {
-        border-bottom: 1px solid rgb(214, 210, 210);
-        padding-bottom: 20px;
-    }
-    
-    .tile:nth-last() {
-        border-bottom: 0px;
-    }
 }
 
 .tile {
@@ -300,6 +275,21 @@ li {
     list-style-position: inside;
 }
 
-.main-text p {
-    font-size: 12px;
+#contacts {
+    background-image: url("images/option4.jpeg");
+}
+
+.email {
+    text-decoration: underline;
+}
+.ptext a {
+    color: white;
+    text-transform: none;
+    cursor: pointer;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+#entities .tile {
+    width: 20vw;
 }

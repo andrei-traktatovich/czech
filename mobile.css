@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+    #showcase {
+        background-size: cover;
+    }
+    header {
+        font-size: x-small;
+        text-align: center;
+    }
+    #showcase-content-text-container {
+        text-align: center;
+        margin-top: 65vh;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #showcase-content-text h1 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    
+    #showcase-content-text h2 {
+        font-size: 14px;
+    }
+
+    #blablabla {
+        display: none;
+    }
+
+    #about-us {
+        flex-basis: 80%; 
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .individuals-main-text {
+        flex-basis: 80%; 
+        margin: auto;
+        font-size: 12px;
+    }
+    
+    .tile {
+        border-bottom: 1px solid rgb(214, 210, 210);
+        padding-bottom: 20px;
+    }
+    
+    .tile:nth-last() {
+        border-bottom: 0px;
+    }
+}
