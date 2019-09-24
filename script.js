@@ -20,13 +20,13 @@
         document.addEventListener("DOMContentLoaded", callback);
     }
     
-    window.onscroll = function() {
-        if (window.scrollY > 10) 
-            document.getElementById("header").classList.add("header-scrolling");
+    // window.onscroll = function() {
+    //     if (window.scrollY > 10) 
+    //         document.getElementById("header").classList.add("header-scrolling");
 
-        else 
-            document.getElementById("header").classList.remove("header-scrolling");
-    };
+    //     else 
+    //         document.getElementById("header").classList.remove("header-scrolling");
+    // };
 
     function scrollTo(element) {
         window.scroll({
