@@ -7,7 +7,9 @@
         font-size: 12px;
         letter-spacing: normal;
     }
-
+    .image {
+        background-attachment: initial;
+    }
     .company-info-link {
         letter-spacing: normal;
         padding: 5px;
