@@ -130,8 +130,6 @@ body{
     border-radius: 50%;
     margin: auto;
     /* border: 3px solid rgb(92, 91, 91); */
-
-    
 }
 
 #company-info-links {
@@ -261,18 +259,6 @@ h1 {
 }
 h2 {
     font-size: 15px;
-}
-ul {
-    list-style-type: none;
-    list-style-position: outside;
-}
-
-li {
-    font-size: 12px;
-    margin-top: 10px;
-    padding-left: 10px;
-    font-size: 12px;
-    list-style-position: inside;
 }
 
 #contacts {

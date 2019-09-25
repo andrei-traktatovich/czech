@@ -1,49 +1,87 @@
 @media (max-width: 600px) {
-    #showcase {
+    #page1 h1 {
+        font-size: 20px;
+    }
+
+    #page1 h2 {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+
+    .company-info-link {
+        letter-spacing: normal;
+        padding: 5px;
+        font-size: 12px;
+        width: 35vw;
+        margin: 5px;
+    }
+
+    .ptext {
+        height: 30vh;
+        width: 100%;
+        left: 00vw;
+        top: 35vh;
+    }
+    .trans {
+        background-color: transparent;
+    }
+
+    /* about us  */
+
+    .text {
+        width: 100%;
+        padding: 5px; 
+        margin: 0 auto; 
+        flex-direction: column;
+    justify-items: center; 
+    align-content: center;
+    }
+
+    #portrait {
+        order: 1;
+        width: 200px;
+        height: 200px;
+        background-image: url('images/antcut.jpg');
+        background-position: center;
         background-size: cover;
+        border-radius: 50%;
+        margin: auto;
+        /* border: 3px solid rgb(92, 91, 91); */
     }
-    header {
-        font-size: x-small;
-        text-align: center;
-    }
-    #showcase-content-text-container {
-        text-align: center;
-        margin-top: 65vh;
-        height: 35vh;
-        background-color: rgba(255, 255, 255, 0.8);
+    #about-us-text1 {
+        order: 2;
     }
 
-    #showcase-content-text h1 {
-        font-size: 35px;
-        margin-top: 20px;
+    #about-us-text2 {
+        order: 3;
+    }
+
+    #about-us-text1 {
+        flex-basis: 0;
+        text-align: left;
     }
     
-    #showcase-content-text h2 {
-        font-size: 14px;
+    #about-us-text2 {
+        flex-basis: 0;
+        text-align: left;
     }
 
-    #blablabla {
-        display: none;
-    }
-
-    #about-us {
-        flex-basis: 80%; 
-        margin: auto;
-        font-size: 12px;
-    }
-
-    .individuals-main-text {
-        flex-basis: 80%; 
-        margin: auto;
-        font-size: 12px;
+    #about-us p {
+        line-height: 1.5;
     }
     
+    .tiles-layout {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* align-content: space-around; */
+        align-content: center;
+        flex: 0;    
+    }
+
     .tile {
-        border-bottom: 1px solid rgb(214, 210, 210);
-        padding-bottom: 20px;
-    }
-    
-    .tile:nth-last() {
-        border-bottom: 0px;
+        flex: initial;
+        max-width: inherit;
+        margin: inherit;
     }
 }
