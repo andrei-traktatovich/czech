@@ -164,15 +164,20 @@ a {
 }
 
 .tiles-layout {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-content: space-around; */
-    align-content: center;
-    flex: 2;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    
 }
 
+#entities-text > .tiles-layout {
+    background-image: url('images/original.jpg');
+    background-size: cover;
+}
 
+.tile {
+    background-color: rgba(17,17,17,.5);
+}
 .tile h2 {
 height: 40px;
 }
@@ -190,54 +195,6 @@ footer {
     text-align: center;
     font-size: smaller;
 }
-#showcase {
-    background-image: url('images/imageedit_15_7174782451.jpg'); 
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#showcase-content {
-    height: 100vh;
-    display: flex; 
-    flex-flow: column;
-    align-content: center;
-}
-
-#showcase-content-text h1 {
-    font-weight: bolder;
-    font-family: czech;
-    line-height: 1;
-}
-
-#showcase-content-text h2 {
-    font-weight: bold;
-}
-
-#buttons {
-    display: inline-flex;
-    margin-top: 5px;
-    /* flex-flow: row;
-    align-content: center; */
-}
-
-.button {
-    background-color:  rgba(62, 85, 94, .2);
-    cursor: pointer;
-    padding: 5px;
-    margin: 5px;
-}
-
-.button:hover {
-    background-color:  rgba(62, 85, 94, .5);
-}
-
-#buttons a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 13px;
-    font-family: "Segoe UI";
-}
 
 .tile-header {
     text-align: center;
@@ -247,12 +204,12 @@ footer {
 }
 
 .tile {
-    flex: 1;
-    min-width: 20%;
-    margin: 20px;
+    padding: 1em;
 }
 
-
+ul {
+    list-style: none;
+}
 h1 {
     font-family: czech;
     font-size: 30px;
