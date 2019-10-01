@@ -60,6 +60,8 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 } 
 
 /* page height */ 
@@ -85,7 +87,8 @@ h1 {
 
 h1.section-header {
     text-align: center;
-    font-size: 8em;
+    font-size: 4em;
+    line-height: 4em;
     color: whitesmoke;
 }
 /* first and last page */
@@ -239,7 +242,7 @@ margin: 0.5em;
 }
  
 .marquee {
-    display: none;
+
     position: fixed;
     bottom: 3vh;
     width: 100%;
@@ -249,7 +252,10 @@ margin: 0.5em;
     color: whitesmoke;
     font-weight: 800;
 }
- 
+.marquee a {
+    color: whitesmoke;
+    font-weight: bolder;
+}
 .marquee span {
     display: inline-block;
     text-transform: uppercase;
