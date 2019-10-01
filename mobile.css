@@ -1,89 +1,22 @@
 @media (max-width: 600px) {
-    #page1 h1 {
-        font-size: 20px;
+    
+    .ptext {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        height: 40%;
+        width: 60%;
+    }
+    
+    .ptext h1, h2 {
+        letter-spacing: 0.1em;
+        font-size: 1em;
     }
 
-    #page1 h2 {
-        font-size: 12px;
-        letter-spacing: normal;
-    }
-    .image {
-        background-attachment: initial;
+    #company-info-links {
+        flex-direction: column;
     }
     .company-info-link {
-        letter-spacing: normal;
-        padding: 5px;
-        font-size: 12px;
-        width: 35vw;
-        margin: 5px;
-    }
-
-    .ptext {
-        height: 30vh;
-        width: 100%;
-        left: 00vw;
-        top: 35vh;
-    }
-    .trans {
-        background-color: transparent;
-    }
-
-    /* about us  */
-
-    .text {
-        width: 100%;
-        padding: 5px; 
-        margin: 0 auto; 
-        flex-direction: column;
-    justify-items: center; 
-    align-content: center;
-    }
-
-    #portrait {
-        order: 1;
-        width: 200px;
-        height: 200px;
-        background-image: url('images/antcut.jpg');
-        background-position: center;
-        background-size: cover;
-        border-radius: 50%;
-        margin: auto;
-        /* border: 3px solid rgb(92, 91, 91); */
-    }
-    #about-us-text1 {
-        order: 2;
-    }
-
-    #about-us-text2 {
-        order: 3;
-    }
-
-    #about-us-text1 {
-        flex-basis: 0;
-        text-align: left;
-    }
-    
-    #about-us-text2 {
-        flex-basis: 0;
-        text-align: left;
-    }
-
-    #about-us p {
-        line-height: 1.5;
-    }
-    
-    .tiles-layout {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        /* align-content: space-around; */
-        align-content: center;
-        flex: 0;    
-    }
-
-    .tile {
-        flex: initial;
-        max-width: inherit;
-        margin: inherit;
+        width: 80%;
     }
 }

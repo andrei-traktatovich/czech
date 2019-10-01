@@ -10,10 +10,47 @@
 
 body{
     margin: 0;
-    font-size: 16px;
-    color: #666; 
+    font-size: 1em;
+    color: rgb(61, 61, 61); 
     line-height: 1.6;   
     font-family: 'Benguiat Rus', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3ch;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+section {
+    padding: 20px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: outside disc;
+    line-height: 2em;
+    text-align: justify;
+    margin-left: 1em;
+}
+
+ul li ul {
+    list-style: circle;
+    margin-left: 3em;
+}
+
+h1 {
+    font-family: czech;
+    text-align: center;
 }
 
 .image {
@@ -25,114 +62,65 @@ body{
     background-attachment: fixed;
 } 
 
+/* page height */ 
 .full-page {
     min-height: 100%;
 }
 
-.ptext {
-    position: absolute;
-    height: 20vh;
-    width: 60vw;
-    text-align: center;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    left: 20vw;
-    top: 40vh;
+.height45 {
+    min-height: 45vh;
 }
 
-.section-header {
-    margin: auto;
-    text-align: center;
-    color: #111;
-}
-.section-header h1 {
+/* section light */
+.section-light {
+    background-color: lightgray;
     color: black;
-    margin-top: 80px;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
 }
+
+/* section dark */
+.section-dark {
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1.section-header {
+    text-align: center;
+    font-size: 8em;
+    color: whitesmoke;
+}
+/* first and last page */
+.ptext {
+    position: absolute;
+    height: 30vh;
+    width: 60vw;
+    text-align: center;
+    left: 20vw;
+    top: 35vh;
+}
+.ptext h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.ptext h1 {
+    font-size: 2em;
+}
+
+.ptext h2 {
+    font-size: 1em;
+}
+
 .border {
     color: white;
-    padding: 20px;
-    /* opacity: 0.7; */
+    padding: 2em;
 }
 
 .trans {
     background-color: rgba(17,17,17,0.7);
 }
 
-.section-light {
-    background-color: lightgray;
-    color: black;
-}
-.section-dark {
-    background-color: #232425;
-    color: #ddd;
-}
-
 #page1 {
     background-image: url("images/option1.jpeg");
-}
-
-#entities {
-    background-image: url("images/option3.jpeg");
-}
-
-#individuals {
-    background-image: url("images/option5.jpeg");
-}
-#individuals-text {
-    text-align: center;
-}
-#individuals-text .tile {
-    background-color: inherit;
-}
-.height45 {
-    min-height: 45vh;
-}
-
-#page1 h1 {
-    font-size: 40px;
-}
-
-.text {
-    width: 90vw;
-    padding: 20px; 
-    margin: 0 auto; 
-    display: flex;
-    justify-items: flex-start; 
-}
-
-#about-us {
-    display: flex;
-    align-content: space-around;
-    
-}
-
-section {
-    padding: 20px;
-}
-#about-us > div {
-    width: 30%;
-    margin: 0 20px;
-
-}
-#about-us p {
-    margin-bottom: 1em;
-}
-about-us-text {
-    margin: 10px;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-#portrait {
-    background-image: url('images/muzzle.jpg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #company-info-links {
@@ -147,84 +135,61 @@ about-us-text {
     text-transform: none;
     color: whitesmoke;
     padding: 5px;
-    font-size: 12px;
+    font-size: 0.7em;
     border: 1px solid whitesmoke;
     border-radius: 5px;
     text-align: center;
     width: 15vw;
     margin: 10px;
 }
+
 .company-info-link a {
     color: whitesmoke;
     
 }
-/* showcase */
 
-/* common */
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
+/* about us */
 
-.tiles-layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    
-}
-
-#entities-text  {
-    background-image: url('images/entities.jpg');
+#portrait {
+    background-image: url('images/antcut.jpg');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.section-light .tile {
-    background-color: rgba(255,255,255,0.7);
+/* entities */
+#entities {
+    background-image: url("images/option3.jpeg");
 }
 
 .tile h2 {
-height: 40px;
+height: 3em;
 }
 .tile-icon {
-margin: 10px;
+margin: 0.5em;
+}
+
+#individuals {
+    background-image: url("images/option5.jpeg");
+}
+#individuals-text {
+    text-align: center;
+}
+#individuals-text .tile {
+    background-color: inherit;
 }
 
 .tile  {
     font-size: smaller;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 3ch;
-    background-color: rgb(65, 63, 63);
-    color: white;
-    text-align: center;
-    font-size: smaller;
+    padding: 1em;
 }
 
 .tile-header {
     text-align: center;
-    }
-.tile {
-    padding: 3px;
+    height: 30vh;
 }
-
-.tile {
-    padding: 1em;
-}
-
-ul {
-    list-style: none;
-}
-h1 {
-    font-family: czech;
-    font-size: 30px;
-}
-h2 {
-    font-size: 15px;
+.tile-header h2 {
+    font-size: 1.5em;
 }
 
 #contacts {
@@ -241,12 +206,6 @@ h2 {
     letter-spacing: normal;
     font-weight: normal;
 }
-
-#entities .tile {
-    width: 20vw;
-}
-
-
 
 @-webkit-keyframes scroll {
     0% {
@@ -280,23 +239,22 @@ h2 {
 }
  
 .marquee {
-    display: block;
-    margin: 0;
+    display: none;
+    position: fixed;
+    bottom: 3vh;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     background-color: rgba(17,17,17,0.2);
-    color: yellow;
+    color: whitesmoke;
     font-weight: 800;
 }
  
 .marquee span {
     display: inline-block;
+    text-transform: uppercase;
     padding-left: 100%;
-    -webkit-animation: scroll  15s infinite linear;
-    -moz-animation: scroll 15s infinite linear;
-    animation: scroll 15s infinite linear;
-}
-.marquee a {
-    color: yellow;
+    -webkit-animation: scroll  30s infinite linear;
+    -moz-animation: scroll 30s infinite linear;
+    animation: scroll 30s infinite linear;
 }
