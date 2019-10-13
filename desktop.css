@@ -1,4 +1,11 @@
 @media (min-width: 601px) {
+    section {
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+    .image {
+        background-size: cover;
+    }
     ul {
         text-align: justify;
     }
@@ -8,7 +15,10 @@
         left: 20vw;
         top: 35vh;
     }
-
+    
+    .height45 {
+        min-height: 45vh;
+    }
     #about-us {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -28,12 +38,17 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;   
     }
+
+    .tile-header {
+        height: 30vh;
+    }
+    
     #individuals-text .tiles-layout {
         grid-template-columns: repeat(4, 1fr);
     }
     
     #entities-text  {
-        background-image: url('images/subway.jpg');
+        background-image: url('images/original.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }

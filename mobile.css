@@ -1,40 +1,82 @@
 @media (max-width: 600px) {
-    .image {
-        background-attachment: fixed;
-    }
+    
     .ptext {
         top: 20%;
         left: 10%;
         height: 40%;
         width: 60%;
+        text-align: center;
     }
     
     .ptext h1 {
         letter-spacing: 0.1em;
-    }
-
-
-    .ptext h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .ptext h2 {
-        font-size: .8em;
+        font-size: .7em;
+        letter-spacing: 0em;
     }
 
     #company-info-links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         flex-direction: column;
     }
     .company-info-link {
-        width: 60%;
-    
+        width: 80%;
+        font-size: .7em;
     }
 
     h1.section-header {
         text-align: center;
         font-size: 1.5em;
-        line-height: 1.5em;
-        color: whitesmoke;
+        line-height: 5em;
+        color: black;
+        text-shadow: 0 0 2px #fff;
     }
 
+    #about-us {
+        line-height: 1.5em;
+    }
+
+    #about-us div {
+        margin-bottom: 2em;
+    }
+
+    #portrait {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    .tiles-layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;   
+    }
+    .tile-header {
+        min-height: 11em;
+    }
+
+    .tile-header h2 {
+        letter-spacing: 0;
+    }
+
+    #entities-text  {
+        background-image: url('images/original.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .section-light .tile {
+        background-color: rgba(255,255,255,0.7);
+    }
 }
