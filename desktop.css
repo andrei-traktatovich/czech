@@ -1,5 +1,11 @@
 @media (min-width: 601px) {
-    
+    .ptext {
+        height: 30vh;
+        width: 60vw;
+        left: 20vw;
+        top: 35vh;
+    }
+
     #about-us {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -24,7 +30,7 @@
     }
     
     #entities-text  {
-        background-image: url('images/original.jpg');
+        background-image: url('images/subway.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }

@@ -1,22 +1,28 @@
 @media (max-width: 600px) {
     
     .ptext {
-        position: absolute;
         top: 20%;
         left: 10%;
         height: 40%;
         width: 60%;
     }
     
-    .ptext h1, h2 {
+    .ptext h1 {
         letter-spacing: 0.1em;
-        font-size: 1em;
+    }
+
+    .ptext h1 {
+        font-size: 2em;
+    }
+
+    .ptext h2 {
+        font-size: .8em;
     }
 
     #company-info-links {
         flex-direction: column;
     }
     .company-info-link {
-        width: 80%;
+        width: 60%;
     }
 }
