@@ -1,4 +1,7 @@
 @media (min-width: 601px) {
+    ul {
+        text-align: justify;
+    }
     .ptext {
         height: 30vh;
         width: 60vw;
