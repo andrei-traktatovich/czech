@@ -13,6 +13,7 @@
         letter-spacing: 0.1em;
     }
 
+
     .ptext h1 {
         font-size: 2em;
     }
@@ -26,5 +27,14 @@
     }
     .company-info-link {
         width: 60%;
+    
     }
+
+    h1.section-header {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: whitesmoke;
+    }
+
 }
