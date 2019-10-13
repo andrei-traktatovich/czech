@@ -1,5 +1,7 @@
 @media (max-width: 600px) {
-    
+    .image {
+        background-attachment: fixed;
+    }
     .ptext {
         top: 20%;
         left: 10%;
