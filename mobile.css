@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+    .image {
+        background-attachment: inherit;
+    }
     
     .ptext {
         top: 20%;
@@ -69,6 +72,7 @@
 
     .tile-header h2 {
         letter-spacing: 0;
+        font-size: 1em;
     }
 
     #entities-text  {
@@ -82,4 +86,6 @@
         background-color: rgba(255, 255, 255, 0.8);
         
     }
+
+    
 }
