@@ -44,6 +44,7 @@
 
     #about-us {
         line-height: 1.5em;
+        text-align: center;
     }
 
     #about-us div {
@@ -51,6 +52,8 @@
     }
 
     #portrait {
+        display: none;
+        /*
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -60,6 +63,7 @@
         margin-right: auto;
         background-color: white;
         border: 1px solid gray;
+        */
     }
     .tiles-layout {
         display: grid;
